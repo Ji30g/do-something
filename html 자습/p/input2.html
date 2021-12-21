@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>input2</title>
+    </head>
+    <body>
+        <form>
+            <input type="date">
+            <input type="datetime-local"> 
+            <!-- 날짜선택 -->
+
+            <input type="color"> 
+            <!-- 색상선택 -->
+
+            <!-- 모바일 키패드 모양 관련 -->
+            <input type="email">
+            <input type="tel">
+
+            <!-- 텍스트 입력시 옆에 x 버튼 생기는것 -->
+            <input type="search">
+
+            <!-- 슬라이드위젯 -->
+            <input type="range" min="1" max="10" value="2" step="2">
+            <input type="number" min="-1" max="10" value="3" step="-2">
+        </form>
+        <hr>
+
+        <!-- 추가된 input의 속성들 -->
+        <form>
+            <!-- 힌트 -->
+            <input type="text" placeholder="input name"> <br>
+            <!-- 반드시 입력해야 하는 값을 검증하는 속성 -->
+            <input type="text" required> <br>
+            <!-- 읽기만 가능 -->
+            <input type="text" readonly value="SAM"> <br>
+            <!-- 글자제한 -->
+            <input type="text" maxlength="5"> <br>
+            
+
+            <!-- 웹페이지가 로딩될떄 가장 먼저 포커스를 받고 싶다면 -->
+            <input type="text" autofocus><br>
+
+            <!-- 자동완성기능 -->
+            <input type="text" autocomplete list="datas">
+
+            <!-- 자동완성으로 보여질 항목리스트 -->
+
+            <datalist id="datas">
+                <option value="canada" label="캐나다"></option>
+                <option value="china" label="중국"></option>
+                <option value="korea" label="한국"></option>
+
+            </datalist>
+
+
+
+            <!-- 서밋버튼 -->
+            <input type="submit" >
+
+        </form>
+        <hr>
+        <!-- hidden 타입: 사용자 입력없이 서버에 데이터를 보낼 것이 있다면 -->
+
+        <form action="aaa.php" method="GET">
+            <input type="text" name="name">
+            <input type="hidden" name="aaa" value="1324">
+
+            <input type="submit">
+
+        </form>
+    </body>
+</html>

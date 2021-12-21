@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 박스 연습 </title>
+
+        <style>
+                p.border{
+                    border-style: dotted;
+
+                    border-top-style:solid ;
+                    border-width: 5px;
+                    border-left-width:thin ;
+
+                    border-color: red;
+                    border-bottom-color: blue;
+
+                    border-radius: 20px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 0px;
+
+                    width: 70%;
+                    height: 200px;
+
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    /* 마진에 대한 연습 */
+                    
+                    
+
+                }
+                    #p1{background-color: red; height:50px; margin:10px;}
+                    #p2{background-color:green; height:50px; margin:10px;}
+
+                    p#background{background-color: aqua;
+                    background-image: url(./20210904125219KakaoTalk_20200327_152113991.jpg);
+                    background-size: 200px 100px; 
+                    background-repeat: repeat;
+                    background-repeat: repeat-x;
+                    background-repeat: no-repeat; /*마지막 것만 적용됨 */
+
+                    background-position: center;
+                    padding: 30px;}
+
+                    p#attachment{
+                        width: 60%;
+                        height: 200px;
+                        border: 2px solid blueviolet;
+                        overflow: scroll;
+                        margin-left: auto; margin-right:auto;
+
+                        background-image: url(./KakaoTalk_20210906_143628392.jpg);
+                        background-size: 300px 250px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        background-attachment: scroll;
+                        background-attachment: local;
+
+                    }
+        </style>
+    </head>
+    <body>
+        <p class="border">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque accusantium maiores quis soluta rerum numquam! Error magni deserunt repellendus commodi vitae. Quibusdam ad saepe veniam, cumque sed aut nisi aperiam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, dolor! Exercitationem quam aspernatur quos eius iste corporis excepturi assumenda quidem deserunt cumque pariatur quis, accusamus voluptatem sunt voluptas, soluta veniam?
+
+        </p>
+        <hr>
+        <div class="margin">
+            <p id="p1">p1</p>
+            <p id="p2">p2</p>
+        </div>
+
+        <p id="background">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum veritatis dolores commodi voluptatum consequuntur, vero fugiat dignissimos ratione distinctio necessitatibus incidunt ab ea quas expedita possimus pariatur facilis quia velit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel minima quaerat excepturi odit libero cumque maiores quisquam quae debitis autem consectetur cupiditate, labore illo aliquid enim delectus ipsam ullam!
+
+        </p>
+        <p id="attachment">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum veritatis dolores commodi voluptatum consequuntur, vero fugiat dignissimos ratione distinctio necessitatibus incidunt ab ea quas expedita possimus pariatur facilis quia velit!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum veritatis dolores commodi voluptatum consequuntur, vero fugiat dignissimos ratione distinctio necessitatibus incidunt ab ea quas expedita possimus pariatur facilis quia velit!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum veritatis dolores commodi voluptatum consequuntur, vero fugiat dignissimos ratione distinctio necessitatibus incidunt ab ea quas expedita possimus pariatur facilis quia velit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel minima quaerat excepturi odit libero cumque maiores quisquam quae debitis autem consectetur cupiditate, labore illo aliquid enim delectus ipsam ullam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel minima quaerat excepturi odit libero cumque maiores quisquam quae debitis autem consectetur cupiditate, labore illo aliquid enim delectus ipsam ullam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel minima quaerat excepturi odit libero cumque maiores quisquam quae debitis autem consectetur cupiditate, labore illo aliquid enim delectus ipsam ullam!
+
+        </p>
+        
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.alert-box{
+    background: rgba(64, 166, 197, 0.589);
+    color: blue;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert-box2{
+    background: rgb(99, 230, 99);
+    color: black;
+    padding : 20px;
+    border-radius: 50px;
+    display: none;
+}
+
+.yellow-bg{
+    background: yellow;
+}

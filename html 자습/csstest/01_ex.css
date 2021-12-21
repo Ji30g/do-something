@@ -1,0 +1,50 @@
+    /* 이 영역에서는 css언어의 문법을 따라야 한다  */
+    /* 이 영역에서는 html언어의 문법 사용 불가!! */
+    
+    /* 기본 문법 : 선택자(속성: 값) */
+    /* 선택자 종류  */
+    /* 1. 타입(요소 종류) 선택자 */
+    h2{color:red}
+    p{color:blue; font-family: serif;}
+/* 2.전체 선택자 */
+    *{font-style: italic; color: yellow; } /*같은 스타일 적용시 개별 선택자가 우선 적용*/
+/* 3.아이디 선택자 */
+    #p1{color: green;}
+/* 4.클래스 선택자 */
+    .aa{color:violet;}
+    /* 선택자 섞어서 사용하기 */
+    p.aa{background-color: yellow;} /*
+    /* 5.선택자 그룹 */
+    li,a{color: gray;}
+/* 6.자식,자손 선택자 */
+    #ss>p{color: black;}
+
+    #ss p{color: limegreen;}
+
+    /* 아래 둘은 완전히 다름 */
+    p.aa{} /*p요소 중에서 class값이 aa인 요소*/
+    p .aa{}/* p요소의 자손들 중에서 class값이 aa인 요소 */
+
+    /* 복합적인 사용 방법 */
+    #kk ul.gg>li{background-color: aqua;}
+
+
+
+/* 7.속성 선택자 */
+    p[class]{font-size:30px;} /*p요소중에서 class 속성이 지정된 요소*/
+    div[id="ss"]{font-weight:bold;}
+/* 8. 외사(pseudo-class) 선택자  */
+
+a:link{color: blue;}
+a:visited{color: brown;}
+
+a:hover{color: green;}
+a:active{color: red;}
+
+/* id가 kk인 ul 에서 li가 첫번째, 마지막, 특정 번호 스타일 주기  */
+#kk ul li:first-child{color: red;}
+#kk ul li:last-child{color:orange;}
+#kk ul li:nth-child(2){color:coral;}
+/* 수식을 이용한 n번째 자식 스타일링 */
+table tr:nth-child(2n+1){background-color: black;}
+

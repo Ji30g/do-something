@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>font style</title>
+    <style type="text/css">
+        p{font-family: "Cooper Black",serif;}
+        p{font-family: "휴먼옛체",sans-serif;}
+
+        p{font-size: 30px;} /*폰트크기*/
+        p{font-size: 2.5em;} /*em 배율 2.5배 */
+        p{font-weight: bold;} /*bold, normal, 100~900두께*/
+        p{font-style: italic;} /*기울기 설정*/
+        /* 위 4개의 폰트관력 속성을 한번에 설정하기  */
+        /* 작성 순선 [weight/ style] size family  */
+        p{font: italic bold 400% "휴먼옛체", serif;} /* 띄어쓰기로 구분 */
+        /* 중앙으로, 앞글자만 대문자 */
+        p{text-align:center;}
+        p{text-transform: capitalize;}
+        /* 줄긋기 */
+        p{text-decoration : none;}
+        p{text-decoration : underline;}
+        /* 그림자 주기 */
+        p{text-shadow: 5px 3px 5px  green;}
+        /*word wrap*/
+        p.aaa{width: 5em; border: 1px solid blue; word-wrap: break-word;} /*5글자*/
+
+        /* 다중 컬럼 */
+        p.lorem{ column-count: 2; column-gap: 80px;
+        column-rule: 4px dashed green; }
+    </style>
+    </head>
+    <body>
+        <p>hello world</p>
+        <p>한글은 어떠한가?</p>
+
+        <p class="aaa">
+            한글은 문제 없이 다음 줄로 자동 내려갑니다 
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <p class="lorem">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ipsum non delectus facere quisquam quo iusto mollitia dolores a libero. Nobis atque dolorum molestiae deserunt eum reiciendis repellendus labore ab?
+        </p>
+        
+    </body>
+</html>

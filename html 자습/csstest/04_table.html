@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabel style</title>
+
+        <style>
+            table{
+                border: 2px solid; border-collapse:collapse; text-align: center;
+            }
+            th,td{border: 1px solid; padding: 10px 5px;}
+
+            th{background-color: teal; color: white;}
+
+            /* 짝수줄만 배경색을 다르게 */
+            tr:nth-child(2n+0){background-color: tomato;}
+
+            td:nth-child(1){width: 40%;}
+            th{border-bottom: double red;}
+        </style>
+    </head>
+    <body>
+        <table>
+
+            <tr>
+                <th>이름</th>
+                <th>이메일</th>
+            </tr>
+            <tr>
+                <td>김철수</td>
+                <td>cjf@naver.com</td>
+            </tr>
+            <tr>
+                <td>김영희</td>
+                <td>rla@naver.com</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>ghd@naver.com</td>
+            </tr>
+            <tr>
+                <td>김수진</td>
+                <td>kim@naver.com</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
